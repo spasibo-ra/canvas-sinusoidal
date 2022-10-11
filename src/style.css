@@ -1,0 +1,32 @@
+body
+{
+  font-family: "Microsoft Sans Serif","sans";
+  color: lightgrey;
+  background-color: #00f;
+}
+
+#canvas {
+    width: 600px; 
+    height: 600px;
+}
+
+#controls {
+  margin: 1em;
+  display: flex;
+}
+
+
+#controls div {
+  display: inline-block;
+  flex: 1 1 30%;
+  margin-right: 0.5em;
+}
+
+p {
+  background-color: #305050;
+  width: 300px;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  margin: 0;
+  margin-bottom: 3px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <style>
+			
+		</style>
+    <title>Canvas</title>
+  </head>
+  <body>
+    <div id="controls">
+      <div>
+        <p>Frequency: <span id="cycles">1</span>Hz</p>
+        <p class="holder">
+          <span>1Hz</span>
+          <input type="range" id="hertz" min="1" max="100" step="0.5" value="1">
+          <span>100Hz</span>
+        </p>
+      </div>
+      <div>
+        <p>Amplitude: <span id="amplitudeLabel">1</span></p>
+        <p class="holder">
+          <span>0</span>
+          <input type="range" id="amplitude" min="0" max="1" step="0.001" value="1">
+          <span>1</span>
+        </p>
+      </div>
+        <div>
+        <p>Phase Shift: <span id="shiftLabel">0</span>&pi;</p>
+        <p class="holder">
+          <span>0</span>
+          <input type="range" id="shift" min="0" max="3.15" step="0.01" value="0">
+          <span>2&pi;</span>
+        </p>
+      </div>
+    </div>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
